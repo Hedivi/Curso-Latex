@@ -1,0 +1,93 @@
+\documentclass[twocolumn]{article}
+
+\usepackage[portuguese]{babel}
+\usepackage{makecell}
+\usepackage{amsmath}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{lipsum}
+
+\title{Exercício - Curso \LaTeX}
+\author{Heloísa Dias Viotto}
+\date{\today}
+
+\newcommand\dummy{Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eget magna at justo tincidunt tincidunt. Curabitur eget ex sed sapien vehicula vestibulum. Integer et nulla id ligula ultrices dignissim. Sed sit amet risus a lorem viverra malesuada.}
+
+\begin{document}
+
+\maketitle
+
+\section{Introdução}
+
+    \lipsum[1]
+
+\section{Seções}
+
+    \lipsum[1]
+
+    \subsection{Subseção}
+
+        \lipsum[1]
+
+        \subsubsection*{Subsubseção}
+
+            \lipsum[1]
+
+            \begin{itemize}
+                \item Frutas:
+                \begin{enumerate}
+                    \item Morango;
+                    \item Abacaxi;
+                    \item Uva;
+                    \item Melancia.                   
+                \end{enumerate}                
+            \end{itemize}
+
+\section{Comandos Textuais e Aspas}
+
+    \textit{\lipsum[1]}
+    
+    \textbf{\lipsum[1]}
+
+    \textcolor{blue}{\lipsum[1]}
+
+    ``\lipsum[1]''
+
+\section{Ambientes}
+
+    A seguir, encontra-se uma imagem em Figura \ref{fig:figure}.
+
+    \begin{figure}[htpb]
+        \caption{Um Sapo de Exemplo.}
+        \label{fig:figure}
+        \centering
+        \includegraphics[width=0.5\linewidth]{Images/frog.jpg}
+    \end{figure}
+
+\section{Tabela}
+
+    \begin{table}[htpb]
+        \centering
+        \begin{tabular}{ c c c }
+             
+             \hline
+             Cia Aérea & Horário & Preço (R\$)\\
+             \hline
+
+             Latam & 11:10 & 200 \\
+             Gol & 11:15 & 220\\
+             Azul & 11:20 & 210\\
+             Gol & 12:40 & 205\\
+             Latam & 12:45 & 215\\
+             \hline
+             
+        \end{tabular}
+        \caption{Tabela de Exemplo}
+        \label{tab:placeholder}
+    \end{table}
+
+    \nocite{*}
+    \bibliographystyle{acm}
+    \bibliography{Main/sample}
+
+\end{document}

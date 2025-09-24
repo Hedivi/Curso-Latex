@@ -1,0 +1,49 @@
+\documentclass{standalone}
+\usepackage[portuguese]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{multirow}   % Para multirow
+\usepackage{booktabs}   % Para linhas mais profissionais
+\usepackage{amsmath}    % Para texto matemático
+
+\begin{document}
+
+\centering
+\begin{tabular}{|c|l|r|p{3cm}|c|}
+
+    \hline
+    
+    \multicolumn{5}{|c|}{\textbf{Tabela de Demonstração de Formatação}} \\
+    \hline
+    
+    \multirow{2}{*}{Código} &  \multicolumn{2}{c|}{Informações do Produto} & \multirow{2}{*}{Descrição} & \multirow{2}{*}{Status} \\
+    
+    \cline{2-3}
+    
+    & \textbf{Nome} & \textbf{Preço (R\$)} & & \\
+    \hline
+    
+    \hline
+    A001 & Notebook Dell & 2.499,99 & Computador para trabalho e estudos com 8GB RAM & 
+    Disponível \\
+    
+    \hline
+    
+    B002 & \multirow{2}{*}{Mouse Óptico} & 89,90 & 
+    Mouse sem fio com design ergonômico & \multirow{2}{*}{Esgotado} \\
+    \cline{1-1}\cline{3-4}
+    
+    B003 & & 79,90 & 
+    Mouse com fio USB & \\
+    \hline
+    
+    C004 & Teclado Mecânico & 349,90 & 
+    Teclado mecânico com switches azuis e LED RGB & 
+    Disponível \\
+    \hline
+    
+    \multicolumn{4}{|r|}{\textbf{Total Parcial:}} & R\$ 3.019,69 \\
+    
+    \hline
+\end{tabular}
+
+\end{document}

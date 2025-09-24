@@ -1,0 +1,28 @@
+\documentclass{standalone}
+\usepackage[portuguese]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{multirow}
+
+\begin{document}
+
+\centering
+\begin{tabular}{|c|l|r|}
+    \hline
+    \multicolumn{3}{|c|}{\textbf{Produtos em Estoque}} \\
+    \hline
+    Código & Nome do Produto & Preço (R\$) \\
+    
+    \hline
+    A001 & Notebook Dell & 2.499,99 \\
+    \hline
+    \multirow{2}{*}{B00*} & Mouse sem fio & 89,90 \\
+    \cline{2-3}
+    & Mouse com fio & 79,90 \\
+    \hline
+    C004 & Teclado Mecânico & 349,90 \\
+    \hline
+    \multicolumn{2}{|r|}{\textbf{Total:}} & R\$ 3.019,69 \\
+    \hline
+\end{tabular}
+
+\end{document}
